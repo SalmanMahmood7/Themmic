@@ -91,7 +91,7 @@ function Home() {
         startRef={thesisRef}
       />
 
-      <section className="relative w-full h-screen overflow-hidden bg-black">
+      <section className="relative w-full min-h-dvh overflow-hidden bg-black">
         {VIDEOS.map((video, i) => (
           <video
             key={video.url}
@@ -113,9 +113,9 @@ function Home() {
           className="absolute inset-0 z-[1] h-full w-full object-cover pointer-events-none animate-train-bob"
         />
 
-        <div className="relative z-[2] flex h-full w-full flex-col">
-          <div className="flex flex-1 flex-col items-center justify-center px-4 text-center">
-            <div className="liquid-glass inline-flex items-center rounded-full px-4 py-2 sm:px-5 sm:py-2.5">
+        <div className="relative z-[2] flex min-h-dvh w-full flex-col">
+          <div className="flex flex-1 flex-col items-center justify-center px-4 pt-28 pb-12 text-center sm:pt-32">
+            <div className="liquid-glass inline-flex max-w-full items-center rounded-full px-4 py-2 sm:px-5 sm:py-2.5">
               <span
                 className={`text-xs transition-colors duration-700 sm:text-sm ${
                   isDark ? 'text-[#182C41]/90' : 'text-white/90'

@@ -178,7 +178,13 @@
       "Bash(node -e \"const p=require\\('/mnt/d/Work/Themmic/node_modules/lucide-react/package.json'\\); console.log\\(p.version\\)\")",
       "Bash(timeout 60 node check-reveal.mjs)",
       "Bash(npx eslint *)",
-      "Bash(npx vite *)"
+      "Bash(npx vite *)",
+      "Bash(NODE_PATH=/home/salman/.npm/_npx/e41f203b7505f1fb/node_modules node shot.cjs)",
+      "Bash(kill 3287 2653 2667)",
+      "Bash(kill 4719 4322)",
+      "Bash(curl -s http://localhost:5183/src/pages/Home.jsx -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Bash(git *)",
+      "Bash(pkill -f \"vite --port 5183\")"
     ]
   }
 }
